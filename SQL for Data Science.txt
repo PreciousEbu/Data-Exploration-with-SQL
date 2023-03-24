@@ -442,24 +442,53 @@ predicting the number of fans a user will have, and so on. These are just a few 
 so feel free to be creative and come up with your own problem you want to solve. Provide answers, in-line, to all of the following:
 	
 i. Indicate the type of analysis you chose to do:
-	Predicting the overall star rating for a business category.
+	Predicting the average star rating for a business category.
          
          
 ii. Write 1-2 brief paragraphs on the type of data you will need for your analysis and why you chose that data:
 
-- To be able to predict the overall star rating for a business, the main data that is needed for this analysis include:
+- To be able to predict the average star rating for a business category, the main data that is needed for this analysis include:
 	the category of business
 	number of reviews, 
-	star rating of the business, 
+	average star rating of the business category, 
 	is open or close, 
 	and location (City)
-   Also, the categories will be used to better distinguish between different types of businesses. `is_open` will 
-   determine which business is open and which business has closed (not hours) but permanently.
+   Also, the essence of the categories is to distingusish between different types of businesses. "is_open" specifies which business is open 
+   and which business has closed (not hours) but permanently. The 'location' gives more insight on where the business is located.
                            
                   
 iii. Output of your finished dataset:
 
-
++------------------------+-----------------+---------------+---------------+---------+
+| category               | city            | Total_reviews |    Avg_rating | is_open |
++------------------------+-----------------+---------------+---------------+---------+
+| Restaurants            | Aurora          |            96 |           3.5 |       1 |
+| Health & Medical       | Avondale        |            60 |           3.0 |       1 |
+| Nail Salons            | Brampton        |            52 | 3.66666666667 |       1 |
+| Mexican                | Champaign       |             8 |           2.0 |       0 |
+| Automotive             | Chandler        |          1408 | 4.47826086957 |       1 |
+| Beauty & Spas          | Charlotte       |           320 | 4.19512195122 |       1 |
+| Restaurants            | Chesterland     |           120 |           4.0 |       1 |
+| Candy Stores           | Cleveland       |          9090 | 4.31481481481 |       1 |
+| Nightlife              | Coraopolis      |            12 |           2.0 |       0 |
+| Active Life            | Cottage Grove   |            10 |           4.5 |       1 |
+| Restaurants            | Cuyahoga Falls  |           110 |           4.0 |       1 |
+| Restaurants            | Edinburgh       |           125 | 3.22727272727 |       1 |
+| American (Traditional) | Fitchburg       |           370 |           3.5 |       1 |
+| Chinese                | Fountain Hills  |            84 |           3.5 |       1 |
+| Auto Repair            | Gastonia        |             8 |           5.0 |       1 |
+| Fast Food              | Gilbert         |            28 |           2.5 |       1 |
+| Restaurants            | Glendale        |             6 |           2.5 |       0 |
+| German                 | Hemmingen       |             9 |           3.0 |       0 |
+| Doctors                | Henderson       |           129 | 4.34090909091 |       1 |
+| Pubs                   | Hudson          |            20 |           3.0 |       1 |
+| Indian                 | Inverness       |             6 |           3.5 |       1 |
+| Japanese               | Las Vegas       |          8267 | 4.02564102564 |       0 |
+| Restaurants            | Litchfield Park |           249 |           3.5 |       1 |
+| Pizza                  | Madison         |             8 |           4.0 |       0 |
+| Hotels & Travel        | Mantua          |            16 |           4.0 |       1 |
++------------------------+-----------------+---------------+---------------+---------+
+(Output limit exceeded, 25 of 61 total rows shown)
          
 iv. Provide the SQL code you used to create your final dataset:
 
