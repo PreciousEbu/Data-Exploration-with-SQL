@@ -9,5 +9,8 @@ This repo comprises of different database files where I have used different Stru
 I have used these projects to highlight some of my SQL skills.
 
 #### Data Sources 
-Kaggle
-Chinook db
+- Kaggle
+
+#### Databases
+- Chinook db
+- Yelp database
